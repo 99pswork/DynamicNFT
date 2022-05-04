@@ -9,6 +9,8 @@ import "@openzeppelin/contracts/utils/math/SafeMath.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
 import "erc721a/contracts/ERC721A.sol";
 
+import "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol";
+
 contract TheDynamicNFT is ERC721A, Ownable, ReentrancyGuard {
     using SafeMath for uint256;
     using Strings for uint256;
@@ -26,9 +28,14 @@ contract TheDynamicNFT is ERC721A, Ownable, ReentrancyGuard {
     uint256 public maxPreSale = 1;
     uint256 public maxPublicSale = 1;
 
-    string private _baseURIextended;
+    string private _baseURIextended1;
+    string private _baseURIextended2;
     
     string public notRevealedUri = "";
+
+    uint256 deviationPercent = 5;
+
+    AggregatorV3Interface internal priceFeed;
 
     mapping(address => bool) public isWhiteListed;
 
@@ -36,6 +43,7 @@ contract TheDynamicNFT is ERC721A, Ownable, ReentrancyGuard {
     mapping(address => uint256) public publicSaleCounter;
 
     constructor(string memory name, string memory symbol) ERC721A(name, symbol) ReentrancyGuard() {
+        priceFeed = AggregatorV3Interface(0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419); // mainnet
     }
 
     function _startTokenId() internal view virtual override returns (uint256) {
@@ -70,11 +78,18 @@ contract TheDynamicNFT is ERC721A, Ownable, ReentrancyGuard {
     }
 
     function _baseURI() internal view virtual override returns (string memory){
-        return _baseURIextended;
+        if(checkDeviation())
+        {
+            return _baseURIextended1;
+        }
+        else{
+            return _baseURIextended2;
+        }
     }
 
-    function setBaseURI(string calldata baseURI_) external onlyOwner {
-        _baseURIextended = baseURI_;
+    function setBaseURI(string calldata baseURI1_, string calldata baseURI2_) external onlyOwner {
+        _baseURIextended1 = baseURI1_;
+        _baseURIextended2 = baseURI2_;
     }
 
     function togglePauseState() external onlyOwner {
@@ -105,6 +120,10 @@ contract TheDynamicNFT is ERC721A, Ownable, ReentrancyGuard {
         publicSalePrice = _publicSalePrice;
     }
 
+    function setDeviation(uint256 _percent) external onlyOwner {
+        deviationPercent = _percent;
+    }
+
     function airDrop(address[] memory _address) external onlyOwner {
         require(totalSupply().add(_address.length) <= maxSupply, "Dynamic-NFT Maximum Supply Reached");
         for(uint i=0; i < _address.length; i++){
@@ -133,5 +152,33 @@ contract TheDynamicNFT is ERC721A, Ownable, ReentrancyGuard {
         string memory currentBaseURI = _baseURI(); 
         return bytes(currentBaseURI).length > 0 ? 
         string(abi.encodePacked(currentBaseURI,_tokenId.toString(),".json")) : "";
+    }
+
+    function checkDeviation() internal view returns(bool) {
+        uint80 roundId;
+        int price;
+        int priceOld;
+        uint timeStamp;
+        uint256 deviation;
+        uint256 priceDifference;
+
+        (roundId, price,, timeStamp,) = priceFeed.latestRoundData();
+
+        uint timeStampOld = timeStamp;
+        timeStamp -= 86400; // 1 day = 86400
+
+        while (timeStampOld > timeStamp) {
+            roundId -= 1;
+            (,priceOld,, timeStampOld,) = priceFeed.getRoundData(roundId);
+        }
+
+        if(priceOld > price) {
+            priceDifference = uint256(priceOld - price);
+            deviation = priceDifference.mul(100).div(uint256(priceOld));
+            if(deviation > deviationPercent) {
+                return true; // +ve deviation
+            }
+        }
+        return false;
     }
 }
