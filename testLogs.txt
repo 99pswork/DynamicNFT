@@ -1,0 +1,22 @@
+
+
+  NFT
+    ✓ Should check for contract's ownership!
+    ✓ Should set base URI (38ms)
+    ✓ Should set provenance hash
+    ✓ Should add whitelisted addresses (71ms)
+    ✓ Should change paused state (93ms)
+    ✓ Should set presale
+    ✓ Should set publicsale
+    ✓ Should set not revealed URI
+    ✓ Should do a presale mint (5092ms)
+    ✓ Should do a public mint (3650ms)
+    ✓ Should check for NFT total supply and Max user Purchase (5023ms)
+    ✓ Should do airdrop (4037ms)
+    ✓ Should return tokenURI
+BigNumber { value: "204999999999999756744" }
+    ✓ Shoud withdraw ETH to Owner's account (57ms)
+
+
+  14 passing (18s)
+

@@ -1,0 +1,13 @@
+**node_modules**
+config
+build
+chaindb
+artifacts/
+cache/
+coverage/
+.vscode/
+credentials.json
+.env
+ipfs/
+NFT.sol
+.DS_Store
