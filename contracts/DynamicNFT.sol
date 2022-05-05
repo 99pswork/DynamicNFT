@@ -28,8 +28,8 @@ contract TheDynamicNFT is ERC721A, Ownable, ReentrancyGuard {
     uint256 public maxPreSale = 1;
     uint256 public maxPublicSale = 1;
 
-    string private _baseURIextended1;
-    string private _baseURIextended2;
+    string private _baseURIextended1; // Negative % Image
+    string private _baseURIextended2; // General Image
     
     string public notRevealedUri = "";
 
@@ -61,6 +61,7 @@ contract TheDynamicNFT is ERC721A, Ownable, ReentrancyGuard {
     function publicSaleMint(uint256 _amount) external payable nonReentrant {
         require(publicSaleActive, "Dynamic-NFT Public Sale is not Active");
         require(publicSaleCounter[msg.sender].add(_amount) <= maxPublicSale, "Dynamic-NFT Maximum Minting Limit Reached");
+        require(publicSalePrice*amount <= msg.value, "Dynamic-NFT ETH Value Sent for Public Sale is not enough");
         mint(_amount, false);
     }
 
@@ -71,7 +72,6 @@ contract TheDynamicNFT is ERC721A, Ownable, ReentrancyGuard {
             preSaleCounter[msg.sender] = preSaleCounter[msg.sender].add(amount);
         }
         else{
-            require(publicSalePrice*amount <= msg.value, "Dynamic-NFT ETH Value Sent for Public Sale is not enough");
             publicSaleCounter[msg.sender] = publicSaleCounter[msg.sender].add(amount);
         }
         _safeMint(msg.sender, amount);
@@ -176,7 +176,7 @@ contract TheDynamicNFT is ERC721A, Ownable, ReentrancyGuard {
             priceDifference = uint256(priceOld - price);
             deviation = priceDifference.mul(100).div(uint256(priceOld));
             if(deviation > deviationPercent) {
-                return true; // +ve deviation
+                return true; // -ve deviation
             }
         }
         return false;
