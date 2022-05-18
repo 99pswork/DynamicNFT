@@ -1,3 +1,40 @@
+// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<▄<<<<<<<<<<<<<<<<!c<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<▌u<<<<<<<<<<<<<<<<<▌<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+// <<<<<<<<<<<<<<<<<<!!<<<<<!▄▄▌▄▌▄☻▌▌▌▌▌▌▌▀▌▌▌▌▌▌▌▄▌▌▌▄▄J<<<<<<!<<<<<<<<<<<<<<<<<<
+// <<<<<<<<<<<<<<<<<<<!▀▀▄▌▌▌▌▌▌▌▌▌▀▀n<<<<<<<<<<<!▀▀▌▌▌▌▌▌▌▌▄▌▀n<<<<<<<<<<<<<<<<<<<
+// <<<<<<<<<<<<<<<<<<<!▄▌▀▌▌▌▌▌▀!<▀▌><<<<<<<<<<<<<▌▀<l▀▀▌▌▌▌▌▌▄J<<<<<<<<<<<<<<<<<<<
+// <<<<<<<<<<<<<<<<!▄▌▌▌▀▀▀▌<<<<<<<<!<<<<<<<<<<<<<<<<<<<<<▀▌▀▀▌▌▀▌c<<<<<<<<<<<<<<<<
+// <<<<<<<<<<<<<<y▌▀▌▌▀<<<<▌<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<▀<<<<▀▀▌▀▌▄<<<<<<<<<<<<<<
+// <<<<<<<<<<<<!▌▌▌▀n<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<!▀▌▌▌▄<<<<<<<<<<<<
+// <<<<<<@<<<<▄▌▌▀<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<▀▌▌▌><<<▄<<<<<<
+// <<<<<<<▌▄y▌▌▌n<<<<<<<<<<<<<<<<<<<<<<<▄<<<<<<<<<<<<<<<<<<<<<<<<<<<<<▀▌▌▄!▌☺<<<<<<
+// <<<<<<<▄▌▌▌▌J!<<<<<<<<<<<<<<<<<<☻▌▌<▌▌▌<<<<<<<<<<<<<<<<<<<<<<<<<<<!J▄▌▌▌▌<<<<<<<
+// <<<<<<▌▌▌▌▌☻nnn<<<<<<<<<<<<<<<<<▀▌▌▀▀▌▌▌▄<<!▄▌▄!<<<<<<<<<<<<<<<<<<<nn▌▌▌▌▌<<<<<<
+// <<<<<▄▌▌▌▌▀<<<<<<<<<<<<<<<<<<<<<J▌▌<▀▌▌▀▌▌J▌▌▀▀▀<<<<<<<<<<<<<<<<<<<<<!▌▌▌▌▌<<<<<
+// <<!▄▄▌▌▌▌▀<<<<<<<<!▄▄<▄▌▌c<<<<<<J▌▌!▀▌▌@▌▌J▌▌▄<<<<<<<<<<<<<<<<<<<<<<<<!▌▌▌▌▄▄c<<
+// !n<<<@▌▌▀▀▄<<<<<<<▀▌▌▀@▌▌▌<<<<J<<▀▀<▀▀<<▀▀<<▀▀<<<<<c<<<<!!!c<<<!JJJc<y▌▀▀▌▌<<n!!
+// <<<<<▌▌<<<<l<<<<▌▌▌▄▄<@▌▌▌<!▌▌▌▌▄!y▌▌▄<▄▌▌<▄▌▌><!▌▌▌▌▄<▀▌▌▌▌▌y▌▀▀▀▀<l<<<<▀▌<<<<<
+// <<<<<▌▌<<<<<<<<<▌▌▌▀<<@▌▌▌@▌▌▄▀▌▌▌J▌▌▌<▌▌▌<▀▌▌>▌▌▌!▀▌▀▀@▌▌▄<▀▌▌▄▄▌▌▄<<<<<@▌<<<<<
+// <<<<<▌><<<<<<<<<▌▌▌<<<@▌▌▌@▌▌▄!▌▌▌J▌▌▌!▌▌▌J▀▌▌>▌▌▌▌<<<<@▌▌▄<!▀▀▀!▌▌▌<<<<<<▌<<<<<
+// <<<<<▌c<<<<<<<<<▌▌▌<<<@▌▌▌▀▀▌▌▌▀▀<<▀▌▌▌▌▀▌▌▌▀▀<!▀▌▌▌<<<☻▌▌▌☺▄▌▌▌▄▀▀<<<<<<<▌><<<<
+// <<<<<▌▌<<<<<<<<▄▌!<<<<<!▀<<<<▀<!<<<<<▀<<<!n<<<<<<!n<<<<<<▀<!▌▌▌▌▄<<<<<<<<!▌><<<<
+// <<<<<▀▌<<<<<<<▀▀▌▀!▄▌▌▌▌▌▄<a▌▌▌▌▌▄<a▌▌▌▄<▄▌▌▌c<!▄▌▌▄!<!▄▌▌▄▀▌▌▌▀<<<<<<<<<@▌<<<<<
+// <<<<<▀▌c<▄☻n<<<<<<<▀▌▌▌▀▌▌▌<▌▌▌▀n!▌▌▌▀▌▌▌<▌▌▌<▌▌▌▀▌▌▌▌▌▌▀▌▀<▌▌▌<<<<<<☻▄!!▌▌<<<<<
+// <l▀☻▌▄▌▌▌▄<<<<<<<<<@▌▌▄!▌▀l<▌▌▌<<J▌▌▌<▌▌▌<▌▌▌<▌▌▌☺n<<▌▌▌<<<<▌▌▌<<<<<<<!▀▌▌▌▄☻▀☺<
+// <<<<<▌▌▌▌▌<<<<<<<<<@▌▌▀n<<<<▌▌▌▄<<▀▌▌▌▌▀▀<▌▌▌<▀▌▌▌▌><▀▌▌▌▄!<▌▌▌▄c<<<<<▌▌▌▌▌<<<<<
+// <<<<<!▀▌▌▌▌<<<<<<<<@▌▌▄<<<<<<▀▀<<<<!▀▀<<<!▌▀<<<<▀▀<<<<<▀▀<<<<▀▀<<<<<!▌▌▌▌▌l<<<<<
+// <<<<<<<▌▌▌▌▌▀▀☺!<<<@▌▌☺<<<<<<<<<<<<<<<<<▀▌▌▌<<<<<<<<<<<<<<<<<<<<!l▀▀▀▌▌▌▀☺<<<<<<
+// <<<<<<<▌▀▀▌▌▄<<<<<<!<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<y▌▌▌▀▌<<<<<<<
+// <<<<<<#▀<<▀▌▌▌J<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<!▌▌▌▀<<!▌<<<<<<
+// <<<<<<<<<<<<▀▌▀▌J<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<!▌▀▌▀<<<<<<<<<<<<
+// <<<<<<<<<<<<<!▀▌▌▌▄<<<<<▄<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<@<<<<<▄▌▀▌▀n<<<<<<<<<<<<<
+// <<<<<<<<<<<<<<<<▀▌▌▀▌▄<!▌<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<@▄<▄▌▀▌▌▀n<<<<<<<<<<<<<<<
+// <<<<<<<<<<<<<<<<<<!▀▌▌▀▀▌▌▄c!<<<▄▀<<<<<<<<<<<<!▄<<<<!▄▌▄▌▀▌▌▀▀<<<<<<<<<<<<<<<<<<
+// <<<<<<<<<<<<<<<<<<<<!▄▌▀▌▌▌▌▌▌▄▌n<<<<<<<<<<<<<<<▀▌▌▌▌▌▌▌▌▌▌!<<<<<<<<<<<<<<<<<<<<
+// <<<<<<<<<<<<<<<<<<<▀▀<<<▀▀▀▌▌▌▌▌▌▌▌▌▄▄▄▄▄▄▄▌▌▌▌▌▌▌▌▌▌▌▀▀n<<▀▀<<<<<<<<<<<<<<<<<<<
+// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<!▌<<<<<nnn<<<<n<<<<<▌▀<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<▀▄<<<<<<<<<<<<<<<<!▀<<<<<<<<<<<<<<<<<<nicedayJules
+
 // SPDX-License-Identifier: MIT
 
 pragma solidity ^0.8.4;
@@ -15,18 +52,10 @@ contract TheDynamicNFT is ERC721A, Ownable, ReentrancyGuard {
     using SafeMath for uint256;
     using Strings for uint256;
 
-    bool public preSaleActive = true;
-    bool public publicSaleActive = false;
-
     bool public paused = true;
     bool public revealed = false;
 
     uint256 public maxSupply = 50; 
-    uint256 public preSalePrice = 0.1 ether; 
-    uint256 public publicSalePrice = 0.15 ether; 
-
-    uint256 public maxPreSale = 1;
-    uint256 public maxPublicSale = 1;
 
     string private _baseURIextended1;
     string private _baseURIextended2;
@@ -50,30 +79,13 @@ contract TheDynamicNFT is ERC721A, Ownable, ReentrancyGuard {
         return 1;
     }
 
-    function preSaleMint(uint256 _amount) external payable nonReentrant{
-        require(preSaleActive, "Dynamic-NFT Pre Sale is not Active");
-        require(isWhiteListed[msg.sender], "Dynamic-NFT User is not White-Listed");
-        require(preSaleCounter[msg.sender].add(_amount) <= maxPreSale, "Dynamic-NFT Maximum Pre Sale Minting Limit Reached");
-        require(preSalePrice*_amount <= msg.value, "Dynamic-NFT ETH Value Sent for Pre Sale is not enough");
-        mint(_amount, true);
+    function ownerMint(uint256 _amount) external onlyOwner {
+        mint(_amount);
     }
 
-    function publicSaleMint(uint256 _amount) external payable nonReentrant {
-        require(publicSaleActive, "Dynamic-NFT Public Sale is not Active");
-        require(publicSaleCounter[msg.sender].add(_amount) <= maxPublicSale, "Dynamic-NFT Maximum Minting Limit Reached");
-        mint(_amount, false);
-    }
-
-    function mint(uint256 amount,bool state) internal {
+    function mint(uint256 amount) internal {
         require(!paused, "Dynamic-NFT Minting is Paused");
         require(totalSupply().add(amount) <= maxSupply, "Dynamic-NFT Maximum Supply Reached");
-        if(state){
-            preSaleCounter[msg.sender] = preSaleCounter[msg.sender].add(amount);
-        }
-        else{
-            require(publicSalePrice*amount <= msg.value, "Dynamic-NFT ETH Value Sent for Public Sale is not enough");
-            publicSaleCounter[msg.sender] = publicSaleCounter[msg.sender].add(amount);
-        }
         _safeMint(msg.sender, amount);
     }
 
@@ -94,30 +106,6 @@ contract TheDynamicNFT is ERC721A, Ownable, ReentrancyGuard {
 
     function togglePauseState() external onlyOwner {
         paused = !paused;
-    }
-
-    function togglePreSale() external onlyOwner {
-        preSaleActive = !preSaleActive;
-        publicSaleActive = false;
-    }
-
-    function togglePublicSale() external onlyOwner {
-        publicSaleActive = !publicSaleActive;
-        preSaleActive = false;
-    }
-
-    function addWhiteListedAddresses(address[] memory _address) external onlyOwner {
-        for (uint256 i = 0; i < _address.length; i++) {
-            isWhiteListed[_address[i]] = true;
-        }
-    }
-
-    function setPreSalePrice(uint256 _preSalePrice) external onlyOwner {
-        preSalePrice = _preSalePrice;
-    }
-
-    function setPublicSalePrice(uint256 _publicSalePrice) external onlyOwner {
-        publicSalePrice = _publicSalePrice;
     }
 
     function setDeviation(uint256 _percent) external onlyOwner {
