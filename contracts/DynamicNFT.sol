@@ -57,8 +57,8 @@ contract TheDynamicNFT is ERC721A, Ownable, ReentrancyGuard {
 
     uint256 public maxSupply = 50; 
 
-    string private _baseURIextended1;
-    string private _baseURIextended2;
+    string private _baseURIextended1; // Negative % Image
+    string private _baseURIextended2; // General Image
     
     string public notRevealedUri = "";
 
@@ -164,7 +164,7 @@ contract TheDynamicNFT is ERC721A, Ownable, ReentrancyGuard {
             priceDifference = uint256(priceOld - price);
             deviation = priceDifference.mul(100).div(uint256(priceOld));
             if(deviation > deviationPercent) {
-                return true; // +ve deviation
+                return true; // -ve deviation
             }
         }
         return false;
