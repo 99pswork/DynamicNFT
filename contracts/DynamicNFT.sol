@@ -62,8 +62,6 @@ contract TheDynamicNFT is ERC721A, Ownable, ReentrancyGuard {
     
     string public notRevealedUri = "";
 
-    uint256 deviationPercent = 5;
-
     AggregatorV3Interface internal priceFeed;
 
     mapping(address => bool) public isWhiteListed;
@@ -108,10 +106,6 @@ contract TheDynamicNFT is ERC721A, Ownable, ReentrancyGuard {
         paused = !paused;
     }
 
-    function setDeviation(uint256 _percent) external onlyOwner {
-        deviationPercent = _percent;
-    }
-
     function airDrop(address[] memory _address) external onlyOwner {
         require(totalSupply().add(_address.length) <= maxSupply, "Dynamic-NFT Maximum Supply Reached");
         for(uint i=0; i < _address.length; i++){
@@ -147,8 +141,6 @@ contract TheDynamicNFT is ERC721A, Ownable, ReentrancyGuard {
         int price;
         int priceOld;
         uint timeStamp;
-        uint256 deviation;
-        uint256 priceDifference;
 
         (roundId, price,, timeStamp,) = priceFeed.latestRoundData();
 
@@ -161,11 +153,7 @@ contract TheDynamicNFT is ERC721A, Ownable, ReentrancyGuard {
         }
 
         if(priceOld > price) {
-            priceDifference = uint256(priceOld - price);
-            deviation = priceDifference.mul(100).div(uint256(priceOld));
-            if(deviation > deviationPercent) {
-                return true; // -ve deviation
-            }
+            return true;
         }
         return false;
     }
