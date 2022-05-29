@@ -117,7 +117,7 @@ contract TheDynamicNFT is ERC721A, Ownable, ReentrancyGuard {
         revealed = true;
     }
 
-    function withdrawTotal() external onlyOwner {
+    function withdrawTotal() external onlyOwner nonReentrant {
         uint balance = address(this).balance;
         payable(msg.sender).transfer(balance);
     }
